@@ -23,7 +23,9 @@ const configFile = path.join(configDir, 'clawdbot.json');
 const configContent = {
   agents: {
     defaults: {
-      model: "google/gemini-3-pro-preview"
+      model: {
+        primary: "google/gemini-3-pro-preview"
+      }
     }
   },
   channels: {
