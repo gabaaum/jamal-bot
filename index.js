@@ -36,6 +36,13 @@ const configContent = {
       enabled: true
     }
   },
+  plugins: {
+    entries: {
+      telegram: {
+        enabled: true
+      }
+    }
+  },
   auth: {
     profiles: {
       "google:default": {
