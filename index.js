@@ -14,10 +14,13 @@ server.listen(port, () => {
 
 // 2. Start Clawdbot Gateway
 console.log('Starting Clawdbot Gateway...');
-const clawdbot = spawn('npx', ['clawdbot', 'gateway', '--config', 'clawdbot.json'], {
+const clawdbot = spawn('npx', ['clawdbot', 'gateway', '--allow-unconfigured'], {
   stdio: 'inherit',
   shell: true,
-  env: { ...process.env }
+  env: { 
+    ...process.env,
+    CLAWDBOT_CONFIG_FILE: 'clawdbot.json'
+  }
 });
 
 clawdbot.on('close', (code) => {
