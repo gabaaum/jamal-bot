@@ -65,8 +65,11 @@ try {
 
 // 3. Start Clawdbot Gateway
 console.log('Starting Clawdbot Gateway...');
+console.log('Config content:', JSON.stringify(configContent, null, 2));
+
 // Remove --allow-unconfigured to force it to read the file we just made
-const clawdbot = spawn('npx', ['clawdbot', 'gateway'], {
+// Add --verbose to debug connection issues
+const clawdbot = spawn('npx', ['clawdbot', 'gateway', '--verbose'], {
   stdio: 'inherit',
   shell: true,
   env: { ...process.env }
