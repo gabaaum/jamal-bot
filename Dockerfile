@@ -19,4 +19,4 @@ COPY . .
 RUN mkdir -p memory
 
 # O comando de início
-CMD ["npx", "clawdbot", "gateway", "--mode", "http"]
+CMD ["node", "index.js"]
