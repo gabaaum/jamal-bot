@@ -21,6 +21,9 @@ const configDir = path.join(homeDir, '.clawdbot');
 const configFile = path.join(configDir, 'clawdbot.json');
 
 const configContent = {
+  gateway: {
+    mode: "local"
+  },
   agents: {
     defaults: {
       model: {
