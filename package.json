@@ -4,7 +4,7 @@
   "description": "Jamal on Railway",
   "main": "index.js",
   "scripts": {
-    "start": "clawdbot gateway --mode http"
+    "start": "node index.js"
   },
   "dependencies": {
     "clawdbot": "latest"
