@@ -1,0 +1,20 @@
+{
+  "agents": {
+    "defaults": {
+      "model": "google/gemini-3-pro-preview"
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true
+    }
+  },
+  "auth": {
+    "profiles": {
+      "google:default": {
+        "provider": "google",
+        "mode": "api_key"
+      }
+    }
+  }
+}
