@@ -7,8 +7,7 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "clawdbot": "latest",
-    "@clawdbot/plugin-telegram": "latest"
+    "clawdbot": "latest"
   },
   "engines": {
     "node": ">=20"
