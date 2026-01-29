@@ -14,7 +14,7 @@ server.listen(port, () => {
 
 // 2. Start Clawdbot Gateway
 console.log('Starting Clawdbot Gateway...');
-const clawdbot = spawn('npx', ['clawdbot', 'gateway', '--mode', 'http'], {
+const clawdbot = spawn('npx', ['clawdbot', 'gateway'], {
   stdio: 'inherit',
   shell: true,
   env: { ...process.env }
